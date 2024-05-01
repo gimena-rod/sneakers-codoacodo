@@ -15,7 +15,7 @@ form {
 body .fom{
     display: flex;
     justify-content: center;
-    Align-content: Center
+    align-content: Center
 }
 
 h1{
@@ -64,5 +64,5 @@ select {
 button {
     color: white;
     background-color: #001652;
-
+    
 }

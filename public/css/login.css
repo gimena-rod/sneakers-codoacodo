@@ -15,7 +15,7 @@ form {
 body .fom{
     display: flex;
     justify-content: center;
-    Align-content: Center
+    align-content: Center
 }
 
 h1{
@@ -60,9 +60,34 @@ select {
     height: 15px;
     width: 15px;
 }
-
+/* 
 button {
-    color: white;
+    color: #c8d6fb;
     background-color: #001652;
     align-items: center;
+    padding: 10px 15px;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 15px;
+    border: solid #001652 1px;
+} */
+
+button:hover{
+    background-color: #6c799b;
+    border: solid #001652 1px;
+    border-radius: 10px;
+    color: #001652;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+}
+button{
+    background-color: #001652;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
 }
