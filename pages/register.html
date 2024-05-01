@@ -6,8 +6,10 @@
     <link rel="shortcut icon" href="../public/img/Your_daily_shoes_store.ico" type="icon">
     <link rel="stylesheet" href="../public/css/index.css">
     <link rel="stylesheet" href="../pages/register.html">
+    <link rel="stylesheet" href="../pages/login.html">
     <link rel="stylesheet" href="../public/css/form.css">
-    <title>Sneakers</title>
+    <link rel="stylesheet" href="../public/css/login.css">
+    <title>Sneakers register</title>
 </head>
 <body>
     <header class="navbar">
@@ -23,14 +25,14 @@
             <ul class="nav-menu">
                 <li><a href="">BUSCAR</a></li>
                 <li><a href="">CARRITO</a></li>
-                <li><a href="./register.html">PROFILE</a></li>
+                <li><a href="./login.html">PROFILE</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="form">
             <form>
-                <h2>Registro</h2>
+                <h1>Registro</h1>
                 <div class="form-register">
                     <label for="Apellido">Apellido</label>
                     <input type="text" name="Apellido" id="Apellido" required placeholder="Ingresá tu Apellido">
@@ -65,6 +67,7 @@
                 <div class="form-register">
                     <label for="Confirme su Contraseña">Confirme su Contraseña</label>
                     <input type="password" name="Confirme su Contraseña" id="password" required placeholder="Confirme su Contraseña">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXlJREFUSEvt1jFLXEEUhuFnQUiRIpUogUhQENuY2CnEIun0B0jAViwULIRIIEawFLUSyxDyAwKCCIJiLAWxs4igEEiQQJoUaYzuyAjm7t7d2YuwhTvNZWbO+d45350ZpqRJrdQkriLgNjzD87joAxziopEiGgGH2LeYxaMM5DcWsJIKbwT8CW/qCC9jJgWeCh7D5yh4FsX3Yv8lltAV+6+wXQ+eCj5BN4KlvfiVEe4su/END7GPobsA90TRoPUOizmiYXwO/+Ie+FMLnlLxIL5GkRFs5AiOlnf7lzg3gLDbc1sKOPzDnagwjN0ctdS46/QW+LaL/XiNPozHiY84zbH6aSbuGFvxVqtIybN6upFbqM7RmcB6NiYPfI72emcxcf47nqSCL2Pgh/J3PhGQDQt57+NgRYF5FbfARdxuWf2fa63NdWPH/TtOP9FR5AxVyfmBx6lX5hRW7wg8WS5iLRUc4l4gvBgfFFzAX2ziqFp+ygukILd2WtPAVy2vVh9r3bT7AAAAAElFTkSuQmCC"" alt="">
                     <span>*</span>
                 </div>
                                 
@@ -84,6 +87,7 @@
                         <option value="Chile">Chile</option>
                         <option value="Otro">Otro</option>
                     </select>
+
                     <label for="provincia">Provincia</label>
                     <select name="provincia" id="provincia">
                         <option value="Buenos Aires">Buenos Aires</option>
@@ -113,6 +117,7 @@
                     </select>
                     <span>*</span>
                 </div>
+
                 <div class="form-register">
                     <input type="checkbox">
                     <label for="acepto terminos y condiciones">Acepto términos y condiciones</label>
