@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../public/img/Your_daily_shoes_store.ico" type="icon">
     <link rel="stylesheet" href="../public/css/index.css">
-    <link rel="stylesheet" href="../pages/register.html">
     <link rel="stylesheet" href="../public/css/login.css">
-    <title>Sneakers login</title>
+    <title>Formulario de Contacto</title>
 </head>
+
 <body>
     <header class="navbar">
         <nav>
-            <a href="../index.html"> 
+            <a href="../index.html">
                 <img src="../public/img/Your_daily_shoes_store-removebg-preview.png" alt="logo-Snakears"></a>
             <ul class="nav-menu">
                 <li><a href="">MUJERES</a></li>
@@ -29,16 +30,55 @@
             </ul>
         </nav>
     </header>
-    <main>
-       <div>
-        <h1>
-            CONTACTO
-        </h1>
-       </div>
-    </main>
+    <h1>Formulario de Contacto</h1>
+    <form id="contactForm" onsubmit="return validarFormulario()">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+        </div>
+        <div>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="8" cols="80" required></textarea>
+        </div>
+        <div>
+            <input type="checkbox" id="suscripcion" name="suscripcion">
+            <label for="suscripcion">Suscribirse al boletín</label>
+        </div>
+        <div>
+            <label for="motivo">Motivo de contacto:</label>
+            <select id="motivo" name="motivo" required>
+                <option value="" disabled selected>Seleccionar</option>
+                <option value="consulta">Consulta</option>
+                <option value="solicitud">Solicitud</option>
+                <option value="queja">Queja</option>
+            </select>
 
+        </div>
+        <div>
+            <label for="adjunto">Adjuntar archivo:</label>
+            <input type="file" id="adjunto" name="adjunto">
+        </div>
+        <div>
+            <img id="captcha" src="captcha.jpg" alt="Captcha">
+        </div>
+        <div>
+            <label for="captchaInput">Ingrese el texto de la imagen:</label>
+            <input type="text" id="captchaInput" name="captchaInput" required>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Footer -->
     <footer>
-        <img src="../public/img/Your_daily_shoes_store-removebg-preview.png"alt="Logo">
+        <img src="../public/img/Your_daily_shoes_store-removebg-preview.png" alt="Logo">
         <div>
             <h3>Nosotros</h3>
             <ul>
@@ -73,5 +113,34 @@
             </ul>
         </div>
     </footer>
+
+    <!-- Función de Validacion de JS  -->
+    <script>
+        function validarFormulario() {
+            var nombre = document.getElementById("nombre").value;
+            var email = document.getElementById("email").value;
+            var telefono = document.getElementById("telefono").value;
+            var mensaje = document.getElementById("mensaje").value;
+            var motivo = document.getElementById("motivo").value;
+            var captchaInput = document.getElementById("captchaInput").value;
+
+            if (nombre === "" || email === "" || telefono === "" || mensaje === "" || motivo === "" || captchaInput === "") {
+                alert("Todos los campos son obligatorios.");
+                return false;
+            }
+
+            // Validar el formato del email
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert("Por favor, ingrese un email válido.");
+                return false;
+            }
+
+            // Aquí puedes agregar más validaciones según tus necesidades
+
+            return true;
+        }
+    </script>
 </body>
+
 </html>
