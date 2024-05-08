@@ -1,0 +1,169 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+body {
+    font-family: "Roboto Slab", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header img{
+    width: 100px;
+    height: 100px;
+}
+header{
+    width: 100%;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001652;
+    color: #fff;
+    padding: 0 30px;
+}
+
+header nav a:visited {
+    color: #fff;
+    text-decoration-color: #c8d6fb;
+  }
+  
+
+.nav-menu{
+    list-style: none;
+}
+
+.nav-menu li {
+    display: inline-block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    border: 1px solid #c8d6fb;
+    border-radius: 10px;
+    text-align: left;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+form div {
+    margin-bottom: 8px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+textarea {
+    width: 85%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 55%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Agregado borde */
+}
+
+select {
+    width: 40%;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001652;
+    color: #fff;
+    padding: 10px 5%;
+    box-sizing: border-box; /* Asegura que el padding no aumente el ancho total del footer */
+    height: auto;
+}
+
+footer img {
+    height: 150px;
+    width: auto;
+}
+
+/* Media queries para diferentes tamaños de dispositivos */
+/* Para tablet */
+@media (max-width: 768px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        width: 90%; /* Cambiado para ocupar todo el ancho */
+    }
+
+    textarea {
+        width: 90%; /* Cambiado para ocupar todo el ancho */
+    }
+
+    button[type="submit"] {
+        width: 30%; /* Cambiado para ocupar todo el ancho */
+    }
+
+    header{
+        flex-wrap: wrap;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        height: auto; /* Altura automática para permitir múltiples líneas */
+        padding: 5px 2%; /* Ajustado el padding para evitar que el contenido se desborde en dispositivos pequeños */
+    }
+}
+
+/* Para celular */
+@media (max-width: 480px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+        width: 85%;
+    }
+
+    button[type="submit"] {
+        width: 55%;
+    }
+
+    header{
+        flex-wrap: wrap;
+        width: auto;
+    }
+
+    nav{
+        flex-wrap: wrap;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        height: auto; /* Altura automática para permitir múltiples líneas */
+        padding: 5px 2%; /* Ajustado el padding para evitar que el contenido se desborde en dispositivos pequeños */
+    }
+}
