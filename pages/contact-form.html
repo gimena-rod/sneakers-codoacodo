@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../public/img/Your_daily_shoes_store.ico" type="icon">
     <link rel="stylesheet" href="../public/css/contact.css">
-    <title>Formulario de Contacto</title>
+    <title>Contáctenos</title>
 </head>
 
 <body>
@@ -29,7 +29,7 @@
             </ul>
         </nav>
     </header>
-    <h1>Formulario de Contacto</h1>
+    <h1>Contáctenos</h1>
     <form id="contactForm" onsubmit="return validarFormulario()">
         <div>
             <label for="nombre">Nombre:</label>
@@ -47,10 +47,10 @@
             <label for="mensaje">Mensaje:</label>
             <textarea id="mensaje" name="mensaje" rows="14" cols="80" required></textarea>
         </div>
-        <div>
+        <div id="subscribe-container">
             <input type="checkbox" id="suscripcion" name="suscripcion">
-            <label for="suscripcion">Suscribirse al boletín</label>
-        </div>
+            <label id="subscribe-label" for="suscripcion">Suscribirse al boletín</label>
+        </div>        
         <div>
             <label for="motivo">Motivo de contacto:</label>
             <select id="motivo" name="motivo" required>
@@ -66,7 +66,7 @@
             <input type="file" id="adjunto" name="adjunto">
         </div>
         <div>
-            <img id="captcha" src="captcha.jpg" alt="Captcha">
+            <img id="captcha" src="../public/img/captcha.jpg" alt="Captcha">
         </div>
         <div>
             <label for="captchaInput">Ingrese el texto de la imagen:</label>
