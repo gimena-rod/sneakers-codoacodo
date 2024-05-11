@@ -7,14 +7,21 @@ body {
     padding: 0;
 }
 
-header img{
+header img {
     width: 100px;
     height: 100px;
 }
-header{
+
+header {
     width: 100%;
 }
-header nav{
+
+header nav a:visited {
+    color: #fff;
+    text-decoration-color: #c8d6fb;
+}
+
+header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,13 +30,7 @@ header nav{
     padding: 0 30px;
 }
 
-header nav a:visited {
-    color: #fff;
-    text-decoration-color: #c8d6fb;
-  }
-  
-
-.nav-menu{
+.nav-menu {
     list-style: none;
 }
 
@@ -48,15 +49,20 @@ h1 {
 }
 
 form {
+    width: 90%;
     border: 1px solid #c8d6fb;
     border-radius: 10px;
     text-align: left;
     padding: 10px;
-    margin-top: 20px;
+    margin: 20px;
 }
 
 form div {
     margin-bottom: 8px;
+}
+
+form img {
+    width: 40%;
 }
 
 label {
@@ -64,13 +70,7 @@ label {
     font-weight: bold;
 }
 
-textarea {
-    width: 85%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-}
-
+textarea,
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -79,10 +79,22 @@ select {
     padding: 10px;
     box-sizing: border-box;
     border: 1px solid #ccc; /* Agregado borde */
+    border-radius: 5px;
 }
 
 select {
-    width: 40%;
+    width: 30%;
+}
+
+#subscribe-container {
+    display: flex; /* Utiliza flexbox para alinear elementos en línea */
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+    margin-bottom: 15px; /* Ajusta el margen inferior según sea necesario */
+}
+
+/* Estilos para el label de suscripción */
+#subscribe-label {
+    margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
 }
 
 button[type="submit"] {
@@ -112,6 +124,7 @@ footer img {
 /* Media queries para diferentes tamaños de dispositivos */
 /* Para tablet */
 @media (max-width: 768px) {
+    textarea,
     input[type="text"],
     input[type="email"],
     input[type="tel"],
@@ -119,15 +132,11 @@ footer img {
         width: 90%; /* Cambiado para ocupar todo el ancho */
     }
 
-    textarea {
-        width: 90%; /* Cambiado para ocupar todo el ancho */
-    }
-
     button[type="submit"] {
         width: 30%; /* Cambiado para ocupar todo el ancho */
     }
 
-    header{
+    header {
         flex-wrap: wrap;
     }
 
@@ -140,10 +149,14 @@ footer img {
 
 /* Para celular */
 @media (max-width: 480px) {
+    form {
+        width: 90%;
+        margin: 5px;
+    }
+    textarea,
     input[type="text"],
     input[type="email"],
     input[type="tel"],
-    textarea,
     select {
         width: 85%;
     }
@@ -152,12 +165,12 @@ footer img {
         width: 55%;
     }
 
-    header{
+    header {
         flex-wrap: wrap;
         width: auto;
     }
 
-    nav{
+    nav {
         flex-wrap: wrap;
     }
 
