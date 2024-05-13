@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../public/img/Your_daily_shoes_store.ico" type="icon">
-    <link rel="stylesheet" href="../public/css/index.css">
     <link rel="stylesheet" href="../public/css/login.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Sneakers login</title>
@@ -28,42 +27,41 @@
             </ul>           
         </nav>
     </header>
-    <main>
-        <div class="form">
-            <form>
-                <h1>Iniciar Sesión</h1>
-                <div class="form-login">
-                    <label for="email">Email</label>
-                    <input type="email" name="Email" id="email" required placeholder="ejemplo@gmail.com">
-                    <span>*</span>
-                </div>
-        
-                <div class="form-login password">
-                    <label for="password">Contraseña</label>
-                    <input type="password" name="password" id="password" required placeholder="Ingresá tu Contraseña">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXlJREFUSEvt1jFLXEEUhuFnQUiRIpUogUhQENuY2CnEIun0B0jAViwULIRIIEawFLUSyxDyAwKCCIJiLAWxs4igEEiQQJoUaYzuyAjm7t7d2YuwhTvNZWbO+d45350ZpqRJrdQkriLgNjzD87joAxziopEiGgGH2LeYxaMM5DcWsJIKbwT8CW/qCC9jJgWeCh7D5yh4FsX3Yv8lltAV+6+wXQ+eCj5BN4KlvfiVEe4su/END7GPobsA90TRoPUOizmiYXwO/+Ie+FMLnlLxIL5GkRFs5AiOlnf7lzg3gLDbc1sKOPzDnagwjN0ctdS46/QW+LaL/XiNPozHiY84zbH6aSbuGFvxVqtIybN6upFbqM7RmcB6NiYPfI72emcxcf47nqSCL2Pgh/J3PhGQDQt57+NgRYF5FbfARdxuWf2fa63NdWPH/TtOP9FR5AxVyfmBx6lX5hRW7wg8WS5iLRUc4l4gvBgfFFzAX2ziqFp+ygukILd2WtPAVy2vVh9r3bT7AAAAAElFTkSuQmCC"/>
-                    <span>*</span>
-                </div>
-                                
-                <div class="form-login">
-                    <label for="Recordarme"><input type="checkbox">Recordarme</label>
-                    <a href="#">Olvido su contraseña?</a>
-                </div>
-        
-                <div class="form-login">
-                    <button type="submit"><a href="../index.html"></a>Iniciar Sesión</button>
-                </div>
+    <main>        
+        <form id="loginForm" class="centered-form">
+            <h1>Iniciar Sesión</h1>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="Email" id="email" required placeholder="ejemplo@gmail.com">
+                <span>*</span>
+            </div>
+            <div>
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" id="password" required placeholder="Ingresá tu Contraseña">              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXlJREFUSEvt1jFLXEEUhuFnQUiRIpUogUhQENuY2CnEIun0B0jAViwULIRIIEawFLUSyxDyAwKCCIJiLAWxs4igEEiQQJoUaYzuyAjm7t7d2YuwhTvNZWbO+d45350ZpqRJrdQkriLgNjzD87joAxziopEiGgGH2LeYxaMM5DcWsJIKbwT8CW/qCC9jJgWeCh7D5yh4FsX3Yv8lltAV+6+wXQ+eCj5BN4KlvfiVEe4su/END7GPobsA90TRoPUOizmiYXwO/+Ie+FMLnlLxIL5GkRFs5AiOlnf7lzg3gLDbc1sKOPzDnagwjN0ctdS46/QW+LaL/XiNPozHiY84zbH6aSbuGFvxVqtIybN6upFbqM7RmcB6NiYPfI72emcxcf47nqSCL2Pgh/J3PhGQDQt57+NgRYF5FbfARdxuWf2fa63NdWPH/TtOP9FR5AxVyfmBx6lX5hRW7wg8WS5iLRUc4l4gvBgfFFzAX2ziqFp+ygukILd2WtPAVy2vVh9r3bT7AAAAAElFTkSuQmCC"/>              
+                <span>*</span>
+            </div>
+            <div class="content-recordar">
+                <input type="checkbox" id="recordarme" name="recordarme">
+                <label id="recordarme-label" for="recordarme">Recordarme</label>                
+            </div>
+            <div>
+                <a href="#">Olvidó su contraseña?</a>
+            </div>            
+            <div>
+                <button type="submit">Iniciar Sesión</button>
+            </div>
+            <div>
+                <h4>¿No tienes cuenta?</h3>
+                <div>
 
-                <div class="form-login">
-                    <h3>¿No tienes cuenta?</h3>
                     <a href="../pages/register.html">Registrarme</a>
                 </div>
-            </form>
-        </div>
+            </div>            
+        </form>
     </main>
-
     <footer>
-        <img src="../public/img/Your_daily_shoes_store-removebg-preview.png"alt="Logo">
+        <img src="../public/img/Your_daily_shoes_store-removebg-preview.png" alt="Logo">
         <div>
             <h3>Nosotros</h3>
             <ul>

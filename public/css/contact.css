@@ -1,8 +1,11 @@
 /* Estilos generales */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
-body {
-    font-family: "Roboto Slab", sans-serif;
+*{
+    font-family:"Roboto Slab", serif;
+}
+
+body {  
     margin: 0;
     padding: 0;
 }
@@ -44,18 +47,13 @@ header nav {
     color: #fff;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
 h1 {
     text-align: center;
+    margin: 30px 0;
 }
 
 form {
-    width: 90%;
+    width: 85%;
     border: 1px solid #c8d6fb;
     border-radius: 10px;
     text-align: left;
@@ -63,17 +61,22 @@ form {
     margin: 20px;
 }
 
+body .form{
+    display: flex;
+    justify-content: center;
+}
+
 form div {
+    margin-top: 8px;
     margin-bottom: 8px;
 }
 
 form img {
-    width: 35%;
+    width: 30%;
 }
 
 label {
     display: block;
-    font-weight: bold;
 }
 
 textarea,
@@ -81,15 +84,24 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 select {
-    width: 55%;
+    width: 50%;
     padding: 10px;
     box-sizing: border-box;
-    border: 1px solid #ccc; /* Agregado borde */
+    border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px;
+}
+
+#mensaje{
+    width: 80%;
+}
+
+#captchaInput{
+    width: 35%;
 }
 
 select {
-    width: 30%;
+    width: 25%;
 }
 
 #subscribe-container {
@@ -103,12 +115,24 @@ select {
     margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
 }
 
-button[type="submit"] {
-    background-color: #007bff;
+button {
+    background-color: #001652;
+    text-decoration: none;
+    border-radius: 10px;
     color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #6c799b;
+    border: solid #001652 1px;
+    border-radius: 10px;
+    color: #001652;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
 }
 
 footer {
@@ -133,9 +157,12 @@ footer img {
     textarea,
     input[type="text"],
     input[type="email"],
-    input[type="tel"],
-    select {
+    input[type="tel"] {
         width: 90%; /* Cambiado para ocupar todo el ancho */
+    }
+
+    select{
+        width: 35%;
     }
 
     button[type="submit"] {
