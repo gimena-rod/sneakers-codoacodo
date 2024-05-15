@@ -7,6 +7,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #fff;
     font-family:"Roboto Slab", serif;
@@ -16,9 +20,11 @@ header img{
     width: 100px;
     height: 100px;
 }
+
 header{
     width: 100%;
 }
+
 header nav{
     display: flex;
     justify-content: space-between;
@@ -61,6 +67,7 @@ main{
     overflow: hidden;
     float: left;
 }
+
 .producto{
     border: .5px solid #c8d6fb;
     width: 30%;
@@ -68,7 +75,13 @@ main{
     float: left;
     padding: 30px;
     border-radius: 10px;
+    transition: transform 0.3s;
 }
+
+.producto:hover {
+    transform: scale(1.1); 
+  }
+
 .producto img{
     width: 250px;
     height: auto;
@@ -103,6 +116,20 @@ aside {
     width: 274px;
     height: 939px;
     border-radius: 10px;
+}
+
+.VolverAlInicio{
+    background-color: #6c799b;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    margin: 10px auto;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 20%;
+    text-align: center;
 }
 
 footer{
