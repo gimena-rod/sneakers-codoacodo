@@ -130,6 +130,20 @@ button:hover {
     background-color: #6c799b;
 }
 
+.VolverAlInicio{
+    background-color: #6c799b;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    margin: 10px auto;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 20%;
+    text-align: center;
+}
+
 footer {
     background-color: #001652;
     color: #fff;

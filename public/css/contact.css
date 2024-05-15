@@ -135,6 +135,20 @@ button:hover {
     display: inline-block;
 }
 
+.VolverAlInicio{
+    background-color: #6c799b;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    margin: 10px auto;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 20%;
+    text-align: center;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
