@@ -1,0 +1,95 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    font-family:"Roboto Slab", serif;
+}
+form {
+    width: 800px;
+    border: 1px solid #c8d6fb;
+    border-radius: 10px;
+    text-align: left;
+    padding: 10px;
+    margin: auto 20%;
+}
+
+body .fom{
+    display: flex;
+    justify-content: center;
+    align-content: Center
+}
+
+h1{
+    text-align: center;
+    text-decoration: none;
+    color: #001652;
+    margin: 30px 0;
+}
+
+.form-register {
+    margin-top: 20px;
+}
+
+.form-register input{
+    width: 65%;
+    height: 20px;
+    margin: 10px 0;
+}
+
+.form-register input {
+    display: inline;
+    position: relative;
+    width: 60%;
+    padding: 25px;
+    border-radius: 5px;
+    color: #001652;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+span {
+    color: red;
+    font-size: 10px;
+}
+
+
+select {
+    margin-top: 10px;
+}
+
+.form-register img{
+    height: 20px;
+    width: 20px;
+}
+
+button {
+    color: white;
+    background-color: #001652;
+    
+}
+
+footer{
+    display: block;
+    float: inherit;
+    background-color: #001652;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    bottom: 0;
+    padding: 5px 10%;
+}
+
+footer img{
+    height: 150px;
+    width: auto;
+}
+
+.footer-link li{
+    list-style: none;
+}
+
+.footer-link li a{
+    color: #fff;
+    text-decoration: none;
+} */
