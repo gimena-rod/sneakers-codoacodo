@@ -1,0 +1,23 @@
+h1{
+    text-align: center; 
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #001652;
+}
+
+h2{
+    text-align: center; 
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #001652;
+}
+
+iframe{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+  }
+
