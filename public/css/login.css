@@ -74,6 +74,7 @@ form img {
 h1 {
     color: #001652;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 form a{
@@ -83,6 +84,7 @@ form a{
 .content-recordar {
     display: flex;
     align-items: center; /* Para centrar verticalmente */
+    padding: 5px;
 }
 
 label {
@@ -96,10 +98,6 @@ input {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-
-.content-recordar{
-    padding: 5px;
 }
 
 #recordarme {
