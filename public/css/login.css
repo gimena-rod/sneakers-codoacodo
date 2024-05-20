@@ -50,16 +50,16 @@ header nav {
 main {
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+    height: 90vh;
 }
 
 form {
-    width: 70%;
+    width: 50%;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 10px;
-    margin: 10px;
 }
 
 form div {
@@ -85,7 +85,6 @@ form a{
     display: flex;
     align-items: center; /* Para centrar verticalmente */
     padding: 5px;
-    margin: 5px;
 }
 
 label {
@@ -94,36 +93,19 @@ label {
 }
 
 input {
-    width: 60%;
+    width: 80%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-#Fecha-nacimiento{
-    width: 40%;
-}
-
-.lugar {
-    margin: 5px;
-}
-
-.recordarme {
+#recordarme {
     width: 8%;
 }
 
-.recordarme-label {
+#recordarme-label {
     width: 60%;
-}
-
-.select{
-    margin: 5px;
-    width: 40%;
-}
-
-#provincia{
-    width: 45%;
 }
 
 span {
