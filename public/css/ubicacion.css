@@ -1,3 +1,17 @@
+header nav a {
+    text-decoration: none;
+    color: #fff; /* Color blanco para los enlaces por defecto */
+}
+
+header nav a:visited {
+    color: #fff;
+    text-decoration-color: #c8d6fb;
+}
+
+header nav a:active {
+    color: #c8d6fb; /* Color para los enlaces activos */
+}
+
 h1{
     text-align: center; 
     margin-top: 0;
