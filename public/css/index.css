@@ -38,10 +38,18 @@ header nav{
     z-index: 99999;
 }
 
+header nav a {
+    color: #fff; /* Color blanco para los enlaces por defecto */
+}
+
 header nav a:visited {
     color: #fff;
     text-decoration-color: #c8d6fb;
-  }
+}
+
+header nav a:active {
+    color: #c8d6fb; /* Color para los enlaces activos */
+}
   
 .txt-center{
     text-align: center;
