@@ -6,7 +6,6 @@
     <link rel="shortcut icon" href="../public/img/Your_daily_shoes_store.ico" type="icon">
     <link rel="stylesheet" href="../public/css/index.css">
     <link rel="stylesheet" href="../public/css/form.css">
-    <link rel="stylesheet" href="../public/css/login.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Sneakers register</title>
 </head>
@@ -19,64 +18,50 @@
                 <li><a href="">MUJERES</a></li>
                 <li><a href="">HOMBRES</a></li>
                 <li><a href="">NIÑOS</a></li>
+                <li><a href="./contact-form.html">CONTACTO</a></li>
             </ul>
             <ul class="nav-menu">
                 <li><a href="#"><i class="bi bi-search"></i></a></li>
                 <li><a href="#"><i class="bi bi-cart"></i></a></li>
-                <li><a href="./register.html">REGISTRO</a></li>
-                <li><a href="./login.html">INGRESAR</a></li>
-                <li><a href="./contact-form.html">CONTACTO</a></li>
+                <li><a href="login.html"><i class="bi bi-person"></i></a></li>
             </ul>           
         </nav>
     </header>
     <main>
-        <div class="form">
             <form>
                 <h1>Registro</h1>
                 <div class="form-register">
-                    <label for="Apellido">Apellido</label>
+                    <label for="Apellido">Apellido <span>*</span></label>
                     <input type="text" name="Apellido" id="Apellido" required placeholder="Ingresá tu Apellido">
-                    <span>*</span>
                 </div>
         
                 <div class="form-register">
-                    <label for="Nombre">Nombre(s)</label>
+                    <label for="Nombre">Nombre(s) <span>*</span></label>
                     <input type="text" name="Nombre(s)" id="nombres" required placeholder="Ingresá tus nombres">
-                    <span>*</span>
                 </div>
         
                 <div class="form-register">
-                    <label for="Fecha de nacimiento">Fecha de nacimiento</label>
+                    <label for="Fecha de nacimiento">Fecha de nacimiento <span>*</span></label>
                     <input type="date" name="Fecha de nacimiento" id="Fecha de nacimiento">
-                    <span>*</span>
                 </div>
         
                 <div class="form-register">
-                    <label for="email">Email</label>
+                    <label for="email">Email <span>*</span></label>
                     <input type="email" name="Email" id="email" required placeholder="ejemplo@gmail.com">
-                    <span>*</span>
                 </div>
         
                 <div class="form-register password">
-                    <label for="password">Contraseña</label>
+                    <label for="password">Contraseña <span>*</span></label>
                     <input type="password" name="password" id="password" required placeholder="Ingresá tu Contraseña">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXlJREFUSEvt1jFLXEEUhuFnQUiRIpUogUhQENuY2CnEIun0B0jAViwULIRIIEawFLUSyxDyAwKCCIJiLAWxs4igEEiQQJoUaYzuyAjm7t7d2YuwhTvNZWbO+d45350ZpqRJrdQkriLgNjzD87joAxziopEiGgGH2LeYxaMM5DcWsJIKbwT8CW/qCC9jJgWeCh7D5yh4FsX3Yv8lltAV+6+wXQ+eCj5BN4KlvfiVEe4su/END7GPobsA90TRoPUOizmiYXwO/+Ie+FMLnlLxIL5GkRFs5AiOlnf7lzg3gLDbc1sKOPzDnagwjN0ctdS46/QW+LaL/XiNPozHiY84zbH6aSbuGFvxVqtIybN6upFbqM7RmcB6NiYPfI72emcxcf47nqSCL2Pgh/J3PhGQDQt57+NgRYF5FbfARdxuWf2fa63NdWPH/TtOP9FR5AxVyfmBx6lX5hRW7wg8WS5iLRUc4l4gvBgfFFzAX2ziqFp+ygukILd2WtPAVy2vVh9r3bT7AAAAAElFTkSuQmCC"/>
-                    <span>*</span>
                 </div>
         
                 <div class="form-register">
-                    <label for="Confirme su Contraseña">Confirme su Contraseña</label>
+                    <label for="Confirme su Contraseña">Confirme su contraseña <span>*</span></label>
                     <input type="password" name="Confirme su Contraseña" id="password" required placeholder="Confirme su Contraseña">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXlJREFUSEvt1jFLXEEUhuFnQUiRIpUogUhQENuY2CnEIun0B0jAViwULIRIIEawFLUSyxDyAwKCCIJiLAWxs4igEEiQQJoUaYzuyAjm7t7d2YuwhTvNZWbO+d45350ZpqRJrdQkriLgNjzD87joAxziopEiGgGH2LeYxaMM5DcWsJIKbwT8CW/qCC9jJgWeCh7D5yh4FsX3Yv8lltAV+6+wXQ+eCj5BN4KlvfiVEe4su/END7GPobsA90TRoPUOizmiYXwO/+Ie+FMLnlLxIL5GkRFs5AiOlnf7lzg3gLDbc1sKOPzDnagwjN0ctdS46/QW+LaL/XiNPozHiY84zbH6aSbuGFvxVqtIybN6upFbqM7RmcB6NiYPfI72emcxcf47nqSCL2Pgh/J3PhGQDQt57+NgRYF5FbfARdxuWf2fa63NdWPH/TtOP9FR5AxVyfmBx6lX5hRW7wg8WS5iLRUc4l4gvBgfFFzAX2ziqFp+ygukILd2WtPAVy2vVh9r3bT7AAAAAElFTkSuQmCC"" alt="">
-                    <span>*</span>
-                </div>
-                                
-                <div class="form-register">
-                    <label for="Recordarme"><input type="checkbox">Recordarme</label>
                 </div>
         
-                <div class="form-register">
-                    <label for="pais">País</label>
+                <div class="form-register pais">
+                    <label for="pais">País <span>*</span></label>
                     <select name="pais" id="pais">
                         <option value="Argentina">Argentina</option>
                         <option value="Brasil">Brasil</option>
@@ -86,7 +71,9 @@
                         <option value="Chile">Chile</option>
                         <option value="Otro">Otro</option>
                     </select>
+                </div>
 
+                <div  class="form-register provincia">
                     <label for="provincia">Provincia</label>
                     <select name="provincia" id="provincia">
                         <option value="Buenos Aires">Buenos Aires</option>
@@ -114,33 +101,33 @@
                         <option value="Tierra del Fuego">Tierra del Fuego</option>
                         <option value="Tucuman">Tucumán</option>
                     </select>
-                    <span>*</span>
                 </div>
 
-                <div class="form-register">
+                <div class="align-center">
                     <input type="checkbox">
                     <label for="acepto terminos y condiciones">Acepto términos y condiciones</label>
                 </div>
         
-                <div class="form-register">
+                <div>
                     <button type="submit"><a href="../index.html"></a>Registrarme</button>
                 </div>
             </form>
-        </div>
     </main>
+
+    <a class="VolverAlInicio"  href="../index.html">Volver a Pagina principal</a>
 
     <footer>
         <img src="../public/img/Your_daily_shoes_store-removebg-preview.png"alt="Logo">
         <div>
             <h3>Nosotros</h3>
-            <ul>
-                <li><a href="#">Ubicación</a></li>
+            <ul class="footer-link">
+                <li><a href="./ubicacion.html">Ubicación</a></li>
                 <li><a href="#">¿Quienes somos?</a></li>
             </ul>
         </div>
         <div>
             <h3>Contactos</h3>
-            <ul>
+            <ul class="footer-link">
                 <li>Arg +5411-48095235</li>
                 <li>info@sneakers.com</li>
                 <li>Instagram: @sneakers.arg</li>
@@ -149,7 +136,7 @@
         </div>
         <div>
             <h3>Ayuda</h3>
-            <ul>
+            <ul class="footer-link">
                 <li>Seguí tu envío</li>
                 <li>Cambios y devoluciones</li>
                 <li>Guía de talles</li>
@@ -157,7 +144,7 @@
         </div>
         <div>
             <h3>Medios de pago</h3>
-            <ul>
+            <ul class="footer-link">
                 <li>Mercado pago</li>
                 <li>Debito</li>
                 <li>Crédito</li>

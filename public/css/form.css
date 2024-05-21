@@ -31,8 +31,14 @@ header nav {
     background-color: #001652;
     color: #fff;
     padding: 0 30px;
+    width: 100%;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0;
+    z-index: 99999;
 }
-
+.txt-center{
+    text-align: center;
+}
 .nav-menu {
     list-style: none;
 }
@@ -47,19 +53,21 @@ header nav {
     color: #fff;
 }
 
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;    
+main{
+    max-width:95%;
+    margin: 8em 1em auto auto;
+    padding: 0;
+    overflow: hidden;
 }
 
 form {
-    width: 70%;
+    width: 60%;
+    margin: 20px auto;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
+    padding: 25px;
+    color: #001652;
 }
 
 form div {
@@ -67,8 +75,9 @@ form div {
 }
 
 form img {
-    width: 15px;
-    height: 15px;
+    width: auto;
+    height: 100%;
+
 }
 
 h1 {
@@ -81,11 +90,27 @@ form a{
     font-size: 15px;
 }
 
-.content-recordar {
+.form-register {
+    margin-top: 20px;
+}
+
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.align-center {
     display: flex;
     align-items: center; /* Para centrar verticalmente */
-    padding: 5px;
-    margin: 5px;
+}
+
+input[type="checkbox"] {
+    width: 10%;
+    margin: 0;
 }
 
 label {
@@ -94,36 +119,54 @@ label {
 }
 
 input {
-    width: 60%;
+    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-#Fecha-nacimiento{
-    width: 40%;
+textarea, select, input:focus{
+    outline: 1px solid #001652;
 }
 
-.lugar {
-    margin: 5px;
+select option{
+    color: #001652;
+}
+.form-password {
+    position: relative;
 }
 
-.recordarme {
+.password-toggle-icon {
+    position: absolute;
+    top: 60%;
+    right: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .password-toggle-icon i {
+    font-size: 18px;
+    line-height: 1;
+    color: #001652;
+    transition: color 0.3s ease-in-out;
+    margin-bottom: 20px;
+  }
+  
+  .password-toggle-icon i:hover {
+    color: #001652;
+  }
+
+.content-recordar{
+    padding: 5px;
+}
+
+#recordarme {
     width: 8%;
 }
 
-.recordarme-label {
+#recordarme-label {
     width: 60%;
-}
-
-.select{
-    margin: 5px;
-    width: 40%;
-}
-
-#provincia{
-    width: 45%;
 }
 
 span {
@@ -132,29 +175,126 @@ span {
 }
 
 button {
-    width: 97%;
+    width: 100%;
     background-color: #001652;
     color: #fff;
     border: none;
     border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
+    padding: 15px;
     cursor: pointer;
+    margin: 10px auto;
+    font-size: 15px;
 }
 
 button:hover {
     background-color: #6c799b;
 }
 
-footer {
+.VolverAlInicio{
+    background-color: #6c799b;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    margin: 10px auto;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 20%;
+    text-align: center;
+}
+
+footer{
+    display: block;
+    float: inherit;
     background-color: #001652;
     color: #fff;
-    padding: 20px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 300px;
+    bottom: 0;
+    padding: 5px 10%;
 }
 
-footer img {
-    height: 80px;
+footer img{
+    height: 150px;
+    width: auto;
+}
+
+.footer-link li{
+    list-style: none;
+}
+
+.footer-link li a{
+    color: #fff;
+    text-decoration: none;
+}
+/* Media queries para diferentes tamaños de dispositivos */
+/* Para tablet */
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+        margin: 5px;
+    }
+    textarea,
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        width: 90%; /* Cambiado para ocupar todo el ancho */
+    }
+
+    select{
+        width: 35%;
+    }
+
+    button[type="submit"] {
+        width: 30%; /* Cambiado para ocupar todo el ancho */
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        height: auto; /* Altura automática para permitir múltiples líneas */
+        /* padding: 5px 2%; Ajustado el padding para evitar que el contenido se desborde en dispositivos pequeños */
+        display: block;
+        text-align: center;
+    }
+
+    footer div{
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        width: 90%;
+        margin: 5px;
+    }
+    textarea,
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        width: 85%;
+    }
+
+    button[type="submit"] {
+        width: 55%;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        height: auto; /* Altura automática para permitir múltiples líneas */
+        /* padding: 5px 2%; Ajustado el padding para evitar que el contenido se desborde en dispositivos pequeños */
+        display: block;
+        text-align: center;
+    }
+
+    footer div{
+        margin-bottom: 15px;
+    }
 }
