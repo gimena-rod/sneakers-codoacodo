@@ -140,6 +140,10 @@ aside img{
     text-align: center;
 }
 
+.hidden {
+    display: none;
+}
+
 footer{
     display: block;
     float: inherit;
