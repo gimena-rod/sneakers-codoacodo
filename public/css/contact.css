@@ -20,6 +20,7 @@ header {
 }
 
 header nav a {
+    text-decoration: none;
     color: #fff; /* Color blanco para los enlaces por defecto */
 }
 
