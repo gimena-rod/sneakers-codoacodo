@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Sneakers register</title>
 </head>
+
 <body>
     <header class="navbar">
         <nav>
             <a href="../index.html">
                 <img src="../public/img/Your_daily_shoes_store-removebg-preview.png" alt="Logo"></a>
             <ul class="nav-menu">
-                <li><a href="#">MUJERES</a></li>
-                <li><a href="#">HOMBRES</a></li>
-                <li><a href="#">NIÑOS</a></li>
+                <li class="category"><a href="#">MUJERES</a></li>
+                <li class="category"><a href="#">HOMBRES</a></li>
+                <li class="category"><a href="#">NIÑOS</a></li>
             </ul>
             <ul class="nav-menu">
                 <li><a href="#"><i class="bi bi-search"></i></a></li>
@@ -25,97 +27,98 @@
                 <li><a href="login.html"><i class="bi bi-person"></i></a></li>
                 <li><a href="./register.html"><i class="bi bi-person-add"></i></a></li>
                 <li><a href="./contact-form.html"><i class="bi bi-envelope"></i></a></li>
-            </ul>           
+            </ul>
         </nav>
     </header>
     <main>
-            <form>
-                <h1>Registro</h1>
-                <div class="form-register">
-                    <label for="Apellido">Apellido <span>*</span></label>
-                    <input type="text" name="Apellido" id="Apellido" required placeholder="Ingresá tu Apellido">
-                </div>
-        
-                <div class="form-register">
-                    <label for="nombres">Nombre(s) <span>*</span></label>
-                    <input type="text" name="Nombre(s)" id="nombres" required placeholder="Ingresá tus nombres">
-                </div>
-        
-                <div class="form-register">
-                    <label for="fecha-nacimiento">Fecha de nacimiento <span>*</span></label>
-                    <input type="date" name="Fecha de nacimiento" id="fecha-nacimiento">
-                </div>
-        
-                <div class="form-register">
-                    <label for="email">Email <span>*</span></label>
-                    <input type="email" name="Email" id="email" required placeholder="ejemplo@gmail.com">
-                </div>
-        
-                <div class="form-register password">
-                    <label for="password">Contraseña <span>*</span></label>
-                    <input type="password" name="password" id="password" required placeholder="Ingresá tu Contraseña">
-                </div>
-        
-                <div class="form-register">
-                    <label for="password-confirmed">Confirme su contraseña <span>*</span></label>
-                    <input type="password" name="Confirme su Contraseña" id="password-confirmed" required placeholder="Confirme su Contraseña">
-                </div>
-        
-                <div class="form-register pais">
-                    <label for="pais">País <span>*</span></label>
-                    <select name="pais" id="pais">
-                        <option value="Argentina">Argentina</option>
-                        <option value="Brasil">Brasil</option>
-                        <option value="Uruguay">Uruguay</option>
-                        <option value="Paraguay">Paraguay</option>
-                        <option value="Bolivia">Bolivia</option>
-                        <option value="Chile">Chile</option>
-                        <option value="Otro">Otro</option>
-                    </select>
-                </div>
+        <form>
+            <h1>Registro</h1>
+            <div class="form-register">
+                <label for="Apellido">Apellido <span>*</span></label>
+                <input type="text" name="Apellido" id="Apellido" required placeholder="Ingresá tu Apellido">
+            </div>
 
-                <div  class="form-register provincia">
-                    <label for="provincia">Provincia</label>
-                    <select name="provincia" id="provincia">
-                        <option value="Buenos Aires">Buenos Aires</option>
-                        <option value="Ciudad Autonoma de Buenos Aires">Ciudad Autonoma de Buenos Aires</option>
-                        <option value="Catamarca">Catamarca</option>
-                        <option value="Chaco">Chaco</option>
-                        <option value="Chubut">Chubut</option>
-                        <option value="Cordoba">Córdoba</option>
-                        <option value="Corrientes">Corrientes</option>
-                        <option value="Entre Rios">Entre Ríos</option>
-                        <option value="Formosa">Formosa</option>
-                        <option value="Jujuy">Jujuy</option>
-                        <option value="La Pampa">La Pampa</option>
-                        <option value="La Rioja">La Rioja</option>
-                        <option value="Mendoza">Mendoza</option>
-                        <option value="Misiones">Misiones</option>
-                        <option value="Neuquen">Neuquén</option>
-                        <option value="Rio Negro">Río Negro</option>
-                        <option value="Salta">Salta</option>
-                        <option value="San Juan">San Juan</option>
-                        <option value="San Luis">San Luis</option>
-                        <option value="Santa Cruz">Santa Cruz</option>
-                        <option value="Santa Fe">Santa Fe</option>
-                        <option value="Santiago del Estero">Santiago del Estero</option>
-                        <option value="Tierra del Fuego">Tierra del Fuego</option>
-                        <option value="Tucuman">Tucumán</option>
-                    </select>
-                </div>
+            <div class="form-register">
+                <label for="nombres">Nombre(s) <span>*</span></label>
+                <input type="text" name="Nombre(s)" id="nombres" required placeholder="Ingresá tus nombres">
+            </div>
 
-                <div class="align-center">
-                    <input type="checkbox" name="terminos" id="acepto-terminos">
-                    <label for="acepto-terminos">Acepto términos y condiciones</label>
-                </div>
-        
-                <div>
-                    <button type="submit">Registrarme</button>
-                </div>
-            </form>
+            <div class="form-register">
+                <label for="fecha-nacimiento">Fecha de nacimiento <span>*</span></label>
+                <input type="date" name="Fecha de nacimiento" id="fecha-nacimiento">
+            </div>
+
+            <div class="form-register">
+                <label for="email">Email <span>*</span></label>
+                <input type="email" name="Email" id="email" required placeholder="ejemplo@gmail.com">
+            </div>
+
+            <div class="form-register password">
+                <label for="password">Contraseña <span>*</span></label>
+                <input type="password" name="password" id="password" required placeholder="Ingresá tu Contraseña">
+            </div>
+
+            <div class="form-register">
+                <label for="password-confirmed">Confirme su contraseña <span>*</span></label>
+                <input type="password" name="Confirme su Contraseña" id="password-confirmed" required
+                    placeholder="Confirme su Contraseña">
+            </div>
+
+            <div class="form-register pais">
+                <label for="pais">País <span>*</span></label>
+                <select name="pais" id="pais">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+
+            <div class="form-register provincia">
+                <label for="provincia">Provincia</label>
+                <select name="provincia" id="provincia">
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Ciudad Autonoma de Buenos Aires">Ciudad Autonoma de Buenos Aires</option>
+                    <option value="Catamarca">Catamarca</option>
+                    <option value="Chaco">Chaco</option>
+                    <option value="Chubut">Chubut</option>
+                    <option value="Cordoba">Córdoba</option>
+                    <option value="Corrientes">Corrientes</option>
+                    <option value="Entre Rios">Entre Ríos</option>
+                    <option value="Formosa">Formosa</option>
+                    <option value="Jujuy">Jujuy</option>
+                    <option value="La Pampa">La Pampa</option>
+                    <option value="La Rioja">La Rioja</option>
+                    <option value="Mendoza">Mendoza</option>
+                    <option value="Misiones">Misiones</option>
+                    <option value="Neuquen">Neuquén</option>
+                    <option value="Rio Negro">Río Negro</option>
+                    <option value="Salta">Salta</option>
+                    <option value="San Juan">San Juan</option>
+                    <option value="San Luis">San Luis</option>
+                    <option value="Santa Cruz">Santa Cruz</option>
+                    <option value="Santa Fe">Santa Fe</option>
+                    <option value="Santiago del Estero">Santiago del Estero</option>
+                    <option value="Tierra del Fuego">Tierra del Fuego</option>
+                    <option value="Tucuman">Tucumán</option>
+                </select>
+            </div>
+
+            <div class="align-center">
+                <input type="checkbox" name="terminos" id="acepto-terminos">
+                <label for="acepto-terminos">Acepto términos y condiciones</label>
+            </div>
+
+            <div>
+                <button type="submit">Registrarme</button>
+            </div>
+        </form>
     </main>
 
-    <a class="VolverAlInicio"  href="../index.html">Volver a Pagina principal</a>
+    <a class="VolverAlInicio" href="../index.html">Volver a Pagina principal</a>
 
     <footer>
         <img src="../public/img/Your_daily_shoes_store-removebg-preview.png" alt="Logo">
@@ -154,4 +157,5 @@
         </div>
     </footer>
 </body>
+
 </html>
