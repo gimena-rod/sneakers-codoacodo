@@ -169,6 +169,11 @@ select option{
     width: 60%;
 }
 
+#mensaje {
+    width: 80%;
+    resize: none;
+}
+
 span {
     color: red;
     font-size: 12px;
