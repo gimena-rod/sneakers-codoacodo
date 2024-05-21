@@ -31,6 +31,10 @@ header nav {
     background-color: #001652;
     color: #fff;
     padding: 0 30px;
+    width: 100%;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0;
+    z-index: 99999;
 }
 
 .nav-menu {
@@ -135,6 +139,20 @@ button:hover {
     display: inline-block;
 }
 
+.VolverAlInicio{
+    background-color: #6c799b;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    margin: 10px auto;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 20%;
+    text-align: center;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -211,5 +229,6 @@ footer img {
         flex-wrap: wrap;
         height: auto; /* Altura automática para permitir múltiples líneas */
         padding: 5px 2%; /* Ajustado el padding para evitar que el contenido se desborde en dispositivos pequeños */
+        
     }
 }

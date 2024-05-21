@@ -7,6 +7,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #fff;
     font-family:"Roboto Slab", serif;
@@ -16,9 +20,11 @@ header img{
     width: 100px;
     height: 100px;
 }
+
 header{
     width: 100%;
 }
+
 header nav{
     display: flex;
     justify-content: space-between;
@@ -26,6 +32,10 @@ header nav{
     background-color: #001652;
     color: #fff;
     padding: 0 30px;
+    width: 100%;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0;
+    z-index: 99999;
 }
 
 header nav a:visited {
@@ -33,6 +43,9 @@ header nav a:visited {
     text-decoration-color: #c8d6fb;
   }
   
+.txt-center{
+    text-align: center;
+}
 
 .nav-menu{
     list-style: none;
@@ -50,7 +63,7 @@ header nav a:visited {
 
 main{
     max-width:95%;
-    margin: 20px auto;
+    margin: 8em 1em auto auto;
     padding: 0;
     overflow: hidden;
 }
@@ -61,6 +74,7 @@ main{
     overflow: hidden;
     float: left;
 }
+
 .producto{
     border: .5px solid #c8d6fb;
     width: 30%;
@@ -68,10 +82,18 @@ main{
     float: left;
     padding: 30px;
     border-radius: 10px;
+    transition: transform 0.3s;
 }
+
+.producto img:hover {
+    transform: scale(1.1); 
+  }
+
 .producto img{
-    width: 250px;
+    width: 100%;
     height: auto;
+    margin-bottom: 5px;
+    cursor: pointer;
 }
 
 .producto h2{
@@ -99,10 +121,23 @@ aside {
     float: right;
 }
 
-.aside img{
-    width: 274px;
-    height: 939px;
+aside img{
+    width: 100%;
+    height: 100%;
+}
+
+.VolverAlInicio{
+    background-color: #6c799b;
+    text-decoration: none;
     border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    margin: 10px auto;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 20%;
+    text-align: center;
 }
 
 footer{
@@ -121,4 +156,97 @@ footer{
 footer img{
     height: 150px;
     width: auto;
+}
+
+.footer-link li{
+    list-style: none;
+}
+
+.footer-link li a{
+    color: #fff;
+    text-decoration: none;
+}
+/* Media queries para diferentes tamaños de dispositivos */
+/* Para tablet */
+@media (max-width: 768px) {
+    .productos{
+    width: 70%;
+    overflow: hidden;
+    float: left;
+    }
+
+    .producto{
+        border: .5px solid #c8d6fb;
+        width: 40%;
+        margin: 10px 10px 20px 10px;
+        float: left;
+        padding: 30px;
+        border-radius: 10px;
+        transition: transform 0.3s;
+    }
+    aside {
+        width: 30%;
+        float: right;
+    }
+    
+    .aside img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        height: auto; /* Altura automática para permitir múltiples líneas */
+        /* padding: 5px 2%; Ajustado el padding para evitar que el contenido se desborde en dispositivos pequeños */
+        display: block;
+        text-align: center;
+    }
+
+    footer div{
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .productos{
+        width: 65%;
+        overflow: hidden;
+        float: left;
+    }
+    .producto{
+        border: .5px solid #c8d6fb;
+        width: 90%;
+        margin: 10px 10px 20px 10px;
+        float: left;
+        padding: 30px;
+        border-radius: 10px;
+        transition: transform 0.3s;
+    }
+    aside {
+        width: 30%;
+        float: right;
+    }
+    
+    .aside img{
+        width: 100%;
+        height: 500px;
+        border-radius: 10px;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        height: auto; /* Altura automática para permitir múltiples líneas */
+        /* padding: 5px 2%; Ajustado el padding para evitar que el contenido se desborde en dispositivos pequeños */
+        display: block;
+        text-align: center;
+    }
+
+    footer div{
+        margin-bottom: 15px;
+    }
 }
