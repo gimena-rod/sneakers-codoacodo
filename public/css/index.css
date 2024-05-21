@@ -64,6 +64,10 @@ header nav a:active {
     display: inline-block;
 }
 
+.category{
+    margin: 5px;
+}
+
 .nav-menu i {
     margin: 5px;
     font-size: 25px;

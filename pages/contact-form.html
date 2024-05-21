@@ -17,9 +17,9 @@
             <a href="../index.html">
                 <img src="../public/img/Your_daily_shoes_store-removebg-preview.png" alt="Logo"></a>
             <ul class="nav-menu">
-                <li><a href="#">MUJERES</a></li>
-                <li><a href="#">HOMBRES</a></li>
-                <li><a href="#">NIÑOS</a></li>
+                <li class="category"><a href="#">MUJERES</a></li>
+                <li class="category"><a href="#">HOMBRES</a></li>
+                <li class="category"><a href="#">NIÑOS</a></li>
             </ul>
             <ul class="nav-menu">
                 <li><a href="#"><i class="bi bi-search"></i></a></li>
@@ -27,7 +27,7 @@
                 <li><a href="login.html"><i class="bi bi-person"></i></a></li>
                 <li><a href="./register.html"><i class="bi bi-person-add"></i></a></li>
                 <li><a href="./contact-form.html"><i class="bi bi-envelope"></i></a></li>
-            </ul>           
+            </ul>
         </nav>
     </header>
     <main>
@@ -50,9 +50,9 @@
                 <textarea id="mensaje" name="mensaje" rows="14" cols="110" required></textarea>
             </div>
             <!-- <div id="subscribe-container">
-                <input type="checkbox" id="suscripcion" name="suscripcion">
-                <label id="subscribe-label" for="suscripcion">Suscribirse al boletín</label>
-            </div>         -->
+                    <input type="checkbox" id="suscripcion" name="suscripcion">
+                    <label id="subscribe-label" for="suscripcion">Suscribirse al boletín</label>
+                </div>         -->
             <div>
                 <label for="motivo">Motivo de contacto:</label>
                 <select id="motivo" name="motivo" required>
@@ -77,7 +77,9 @@
             <button type="submit">Enviar</button>
         </form>
 
-    <!-- <a class="VolverAlInicio"  href="../index.html">Volver a Pagina principal</a> -->
+
+
+        <!-- <a class="VolverAlInicio"  href="../index.html">Volver a Pagina principal</a> -->
     </main>
     <!-- Footer -->
     <footer>
@@ -137,7 +139,7 @@
             if (!emailRegex.test(email)) {
                 alert("Por favor, ingrese un email válido.");
                 return false;
-            }          
+            }
 
             return true;
         }
