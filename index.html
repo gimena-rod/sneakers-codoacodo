@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="./public/img/Your_daily_shoes_store.ico" type="image/x-icon">
     <link rel="stylesheet" href="./public/css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"/>
     <title>Sneakers</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
             </ul>
             <ul class="nav-menu">
                 <li><a href="#"><i class="bi bi-search"></i></a></li>
-                <li><a href="#"><i class="bi bi-cart"></i></a></li>
+                <li><a href="./pages/cart.html"><i class="bi bi-cart"></i><span class="badge" id="badge"></span></a></li>
                 <li><a href="./pages/login.html"><i class="bi bi-person"></i></a></li>
                 <li><a href="./pages/register.html"><i class="bi bi-person-add"></i></a></li>
                 <li><a href="./pages/contact-form.html"><i class="bi bi-envelope"></i></a></li>
@@ -30,8 +31,8 @@
     </header>
 
     <main>
-        <section class="productos">
-            <h2 class="hidden">Productos</h2>
+        <section id="products" class="productos">
+            <!-- <h2 class="hidden">Productos</h2>
             <article class="producto">
                 <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/393496/01/sv01/fnd/ARG/fmt/png" alt="Zapatilla mujer">
                 <h2>Nombre del producto</h2>
@@ -72,7 +73,7 @@
                 <h2>Nombre del producto</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <a href="#">Ver más</a>
-            </article>
+            </article> -->
         </section>
 
         <aside>
@@ -86,7 +87,7 @@
         </aside>
     </main>
 
-    <a class="VolverAlInicio"  href="#inicio">Volver al inicio</a>
+    <div id="test"></div>
 
     <footer>
         <img src="./public/img/Your_daily_shoes_store-removebg-preview.png" alt="Logo">
@@ -124,5 +125,9 @@
             </ul>
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script text="text/javascript" src="./public/js/products.js"></script>
 </body>
 </html>

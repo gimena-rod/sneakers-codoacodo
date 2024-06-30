@@ -1,0 +1,76 @@
+main{
+    max-width:95%;
+    margin: 8em 1em auto auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.text-info {
+    text-align: center;
+}
+.table-container{
+    width: 90%;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 25px;
+    color: #001652;
+
+}
+
+table{
+    width: 100%;
+    font-size: 14px;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+table tr th, table tr td {
+    padding: 15px 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.4;
+    color: #001652;
+    vertical-align: middle;
+    border: none;
+}
+table tbody tr td .btn {
+    height: 20px;
+    width: 20px;
+    margin: auto 10px;
+    text-decoration: none;
+    font-style: none;
+    cursor: pointer;
+}
+
+.btn-info{
+    margin: auto 20px;
+    margin-top: 10px;
+    height: 50px;
+    width: auto;
+    border: 0;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #001652;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+.btn-delete {
+    color: red;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+tr{
+    border-bottom: 1px solid #253a7429;
+}
