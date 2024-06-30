@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../public/img/Your_daily_shoes_store.ico" type="image/x-icon">
     <link rel="stylesheet" href="../public/css/index.css">
-    <link rel="stylesheet" href="../public/css/form.css">
+    <link rel="stylesheet" href="../public/css/cart-table.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Sneakers detalle de product</title>
+    <title>Sneakers cart</title>
 </head>
 <body>
     <header class="navbar">
@@ -28,15 +28,22 @@
             </ul>           
         </nav>
     </header>
-    <main>
-       <div>
-        <h1>
-            DETALLE DE PRODUCTO
-        </h1>
-       </div>
+    <main > 
+        <div class="table-container" id="main-cart">
+            <h1 class="txt-center">TU CARRITO</h1>
+            <div>
+                 <a class="btn-info" href="../index.html"> Volver a la Tienda</a>
+            </div>
+            <table id="table">
+            </table>
+            <div>
+                <button  class="btn-info" id="cleanCart">Vaciar Carrito</button>
+            </div>
+        </div>
     </main>
 
-    <a class="VolverAlInicio"  href="../index.html">Volver a Pagina principal</a>
+    <!-- <a class="VolverAlInicio"  href="../index.html">Volver a página principal</a> -->
+    
 
     <footer>
         <img src="../public/img/Your_daily_shoes_store-removebg-preview.png" alt="Logo">
@@ -74,6 +81,7 @@
             </ul>
         </div>
     </footer>
-    <script text="text/javascript" src="../public/js/badge.js"></script>
 </body>
+    <script text="text/javascript" src="../public/js/cart.js"></script>
+    <script text="text/javascript" src="../public/js/products.js"></script>
 </html>
